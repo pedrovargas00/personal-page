@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PersonalPage</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container-fluid">
+            <a id="logo" class="navbar-brand" href="index.html"><img class="logo" src="resources/logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav mr-auto">
+                    <a id="aboutMe" class="nav-link" href="#aboutMeSection">About me</a>
+                    <a id="projects" class="nav-link" href="#projectSection">Projects</a>
+                    <a id="contact" class="nav-link" href="#contactSection">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="aboutMeSection" class="container-fluid">
+        <div class="row center">
+            <h2 class="background-about-me"><span>About me</span></h2>
+            <div class="col-6">
+                <p style="text-align: justify;">
+                    Soy egresado de Ingeniería en Ciencias de la Computación de la BUAP. Adquirí conocimientos en
+                    desarrollo web de manera autónoma, me apasiona colaborar en proyectos que representen un desafío
+                    para mí, así como el trabajo en equipo, apoyar a los demás y continuar aprendiendo en el camino.
+                    He realizado diversos proyectos backend implementando distintas tecnologías web, al igual que
+                    gestores de bases de datos y de autenticación. Entre estas tecnologías se encuentra NodeJS, Java y
+                    PHP.
+                    En mi experiencia, una buena comunicación, una buena organización y conocer las fortalezas del
+                    equipo son las claves para lograr proyectos interesantes o complejos.
+                    Me considero una persona organizada, atenta, me involucro bastante en lo que hago. Creo que puedo
+                    aportar a los demás tanto en lo profesional como en lo social. Estoy en busca de comenzar
+                    mi carrera profesional en una empresa en la cual haya un beneficio mutuo y que me permitan 
+                    desenvolverme en el área.
+
+                    This is the way.
+                </p>
+            </div>
+            <div class="col-4 image text-center">
+                <img class="img-fluid profile" src="resources/profile.png" alt="Perfil">
+            </div>
+        </div>
+    </section>
+
+    <section id="projectSection" class="container-fluid text-center">
+        <h2 class="background"><span>Languages & Technologies</span></h2>
+        <div class="row row-cols-4">
+            <div class="col spaces">
+                <i class="fa-brands fa-java fa-xl"></i>
+                <span class="span-color">Java</span>
+            </div>
+            <div class="col spaces">
+                <i class="fa-brands fa-python fa-xl"></i>
+                <span class="span-color">Python</span>
+            </div>
+            <div class="col spaces">
+                <i class="fa-brands fa-js fa-xl"></i>
+                <span class="span-color">JavaScript</span>
+            </div>
+            <div class="col spaces">
+                <i class="fa-brands fa-node-js fa-xl"></i>
+                <span class="span-color">NodeJS</span>
+            </div>
+            <div class="col spaces">
+                <i class="fa-solid fa-database fa-xl"></i>
+                <span class="span-color">MySQL/MongoDB</span>
+            </div>
+            <div class="col spaces">
+                <i class="fa-brands fa-php fa-xl"></i>
+                <span class="span-color">PHP</span>
+            </div>
+            <div class="col spaces">
+                <i class="fa-brands fa-linux fa-xl"></i>
+                <span class="span-color">Linux</span>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade " id="projectModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">Proyecto aún no desplegado</div>
+            </div>
+        </div>
+    </div>
+    <section class="container-fluid">
+        <h2 class="background"><span>Personal Projects</span></h2>
+        <div class="row g-2 center">
+            <div class="col-sm-3 mb-3 mb-sm-0">
+                <div class="card card-desing">
+                    <div class="card-body">
+                        <a href="https://github.com/pedrovargas00/rutas_turisticas"><i
+                                class="col-1 fa-brands fa-github-alt fa-xl fa-bounce icon"></i></a>
+                        <div class="row justify-content-end">
+                            <i class="col-1 fa-brands fa-php"></i>
+                            <i class="col-1 fa-sharp fa-solid fa-cloud"></i>
+                            <i class="col-1 fa-sharp fa-solid fa-database"></i>
+                        </div>
+                        <a data-bs-toggle="modal" data-bs-target="#projectModal" href="">
+                            <h5 class="card-title">Rutas turísticas</h5>
+                        </a>
+                        <p class="card-text" style="text-align: justify;">Página web para consultar, crear, compartir y
+                            comentar sitios turísticos en México.</p>
+                        <p class="card-text" style="font-size: small;">PHP • MySQL • Cloudinary</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 mb-3 mb-sm-0">
+                <div class="card card-desing">
+                    <div class="card-body">
+                        <a href="https://github.com/pedrovargas00/RESTServer-NodeJS"><i
+                                class="col-1 fa-brands fa-github-alt fa-xl fa-bounce icon"></i></a>
+                        <div class="row justify-content-end">
+                            <i class="col-1 col-1 fa-brands fa-npm"></i>
+                            <i class="col-1 col-1 fa-brands fa-node-js"></i>
+                            <i class="col-1 fa-sharp fa-solid fa-database"></i>
+                        </div>
+                        <a data-bs-toggle="modal" data-bs-target="#projectModal" href="">
+                            <h5 class="card-title">REST Server con NodeJS</h5>
+                        </a>
+                        <p class="card-text" style="text-align: justify;">App web con gestión de usuarios, productos y
+                            categorización de estos mediante un CRUD.</p>
+                        <p class="card-text" style="font-size: small;">NodeJS • Google Sign-In • MongoDB</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 mb-3 mb-sm-0">
+                <div class="card card-desing">
+                    <div class="card-body">
+                        <a href="https://github.com/pedrovargas00/Chat-con-Socket.io"><i
+                                class="col-1 fa-brands fa-github-alt fa-xl fa-bounce icon"></i></a>
+                        <div class="row justify-content-end">
+                            <i class="col-1 col-1 fa-brands fa-npm"></i>
+                            <i class="col-1 col-1 fa-brands fa-node-js"></i>
+                            <i class="col-1 fa-sharp fa-solid fa-database"></i>
+                        </div>
+                        <a data-bs-toggle="modal" data-bs-target="#projectModal" href="">
+                            <h5 class="card-title">Chat con Socket.io</h5>
+                        </a>
+                        <p class="card-text" style="text-align: justify;">Chat con mensajes privados o globales a los
+                            usuarios, inicio sesión con Google Sign-In.</p>
+                        <p class="card-text" style="font-size: small;">NodeJS • Socket.io • MongoDB</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 mb-3 mb-sm-0">
+                <div class="card card-desing">
+                    <div class="card-body">
+                        <a href="https://github.com/pedrovargas00/Pygame_Game"><i
+                                class="col-1 fa-brands fa-github-alt fa-xl fa-bounce icon"></i></a>
+                        <div class="row justify-content-end">
+                            <i class="col-1 fa-brands fa-python"></i>
+                            <i class="col-1 fa-regular fa-alien-8bit"></i>
+                        </div>
+                        <a data-bs-toggle="modal" data-bs-target="#projectModal" href="">
+                            <h5 class="card-title">Juego con Pygame</h5>
+                        </a>
+                        <p class="card-text" style="text-align: justify;">Juego de naves espaciales 2D por niveles,
+                            estos brindan información sobre planetas al finalizar.</p>
+                        <p class="card-text" style="font-size: small;">Python • Pygame</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 mb-3 mb-sm-0">
+                <div class="card card-desing">
+                    <div class="card-body">
+                        <a href="https://github.com/pedrovargas00/Gen-tico"><i
+                                class="col-1 fa-brands fa-github-alt fa-xl fa-bounce icon"></i></a>
+                        <div class="row justify-content-end">
+                            <i class="col-1 fa-brands fa-java"></i>
+                        </div>
+                        <a data-bs-toggle="modal" data-bs-target="#projectModal" href="">
+                            <h5 class="card-title">Predicción de diabetes</h5>
+                        </a>
+                        <p class="card-text" style="text-align: justify;">Calcula la posibilidad de padecer diabetes con
+                            base en los antecedentes médicos de familiares.</p>
+                        <p class="card-text" style="font-size: small;">Java • Swing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 mb-3 mb-sm-0">
+                <div class="card card-desing">
+                    <div class="card-body">
+                        <a href="https://github.com/pedrovargas00/IA"><i
+                                class="col-1 fa-brands fa-github-alt fa-xl fa-bounce icon"></i></a>
+                        <div class="row justify-content-end">
+                            <i class="col-1 fa-brands fa-java"></i>
+                        </div>
+                        <a data-bs-toggle="modal" data-bs-target="#projectModal" href="">
+                            <h5 class="card-title">Algoritmos de IA</h5>
+                        </a>
+                        <p class="card-text" style="text-align: justify;">Conjunto de algoritmos de Inteligencia
+                            Artificial para resolver el juego Puzzle 8.</p>
+                        <p class="card-text" style="font-size: small;">Java • Swing</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 mb-3 mb-sm-0">
+                <div class="card card-desing">
+                    <div class="card-body">
+                        <a href="https://github.com/pedrovargas00/Juego_Memoria"><i
+                                class="col-1 fa-brands fa-github-alt fa-xl fa-bounce icon"></i></a>
+                        <div class="row justify-content-end">
+                            <i class="col-1 fa-brands fa-java"></i>
+                        </div>
+                        <a data-bs-toggle="modal" data-bs-target="#projectModal" href="">
+                            <h5 class="card-title">Memorama</h5>
+                        </a>
+                        <p class="card-text" style="text-align: justify;">Juego de memoria integrando imágenes, sonidos
+                            y un sistema de puntuación por cada partida.</p>
+                        <p class="card-text" style="font-size: small;">Java • Swing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 mb-3 mb-sm-0">
+                <div class="card card-desing">
+                    <div class="card-body">
+                        <a href="https://github.com/pedrovargas00/RSA_Simulator"><i
+                                class="col-1 fa-brands fa-github-alt fa-xl fa-bounce icon"></i></a>
+                        <div class="row justify-content-end">
+                            <i class="col-1 fa-brands fa-java"></i>
+                            <i class="col-1 fa-solid fa-key"></i>
+                        </div>
+                        <a data-bs-toggle="modal" data-bs-target="#projectModal" href="">
+                            <h5 class="card-title">RSA algorithm</h5>
+                        </a>
+                        <p class="card-text" style="text-align: justify;">Implementación del algoritmo y procesos de
+                            encriptación RSA con llaves para simular la ejecución.</p>
+                        <p class="card-text" style="font-size: small;">Java • Swing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactSection" class="container-fluid">
+        <div class="row center">
+            <h2 class="background"><span>Contact</span></h2>
+            <p style="text-align: justify;">Si es reclutador o reclutadora y/o considera que mi perfil cumple con alguna
+                de sus vacantes disponibles, no dude en contactarme al correo <a
+                    href="mailto:01vargaspedro@gmail.com">01vargaspedro@gmail.com</a>. Responderé lo más pronto
+                posible. Adjunto mi CV para más información sobre mi perfil.<br /><br />
+                Gracias por su visita.</p>
+        </div>
+        <div class="text-center"><a href="#" class="btn btn-outline">Descargar CV</a></div>
+        <!-- Agregar CV -->
+    </section>
+
+    <footer>
+        <div class="container-fluid text-center" style="width: 50%;">
+            <div class="row align-items-center">
+                <a href="https://github.com/pedrovargas00" class="col"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pedro-vargas-arenas/" class="col"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/IamPedroVA" class="col"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9309044ac1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

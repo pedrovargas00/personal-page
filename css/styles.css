@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wight@400:800&display-swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+nav {
+    background-color: #232931;
+}
+
+html {
+    border-right: 150px solid #232931;
+    border-left: 150px solid #232931;
+    min-height: 100%;
+}
+
+body {
+    background-color: #232931;
+}
+
+p, a, h3 {
+    color: #EEEEEE;
+}
+
+section, footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #232931;
+}
+
+i {
+    color: #4ECCA3;
+}
+
+
+a:hover{
+  color: #4ECCA3;
+}
+
+#logo, #aboutMe, #projects, #contact {
+    color: #EEEEEE;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.card-desing {
+    background-color: #393E46;
+}
+
+.icon {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.span-color {
+    color: #EEEEEE;
+}
+
+.spaces {
+    margin-bottom: 30px;
+}
+
+.image {
+    height: 300px; 
+    width: 300px;
+}
+
+h2 {
+    color: #EEEEEE;
+    font: 33px sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.background {
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;   
+}
+
+.background-about-me {
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;   
+}
+    
+h2:before {
+    border-top: 2px solid #4ECCA3;
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%; left: 0; right: 0; bottom: 0;
+    width: 50%;
+    z-index: -1;
+}
+
+h2 span { 
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+    background: #232931; 
+    padding: 0 15px; 
+}
+
+.btn-outline {
+    color: #4ECCA3;
+    background-color: #393E46;
+    border-color: #4ECCA3;
+    letter-spacing: 0.05em;
+    margin-bottom: 100px;
+}
+
+.btn-outline {
+    color: #4ECCA3;
+    background-color: #393E46;
+    border-color: #4ECCA3;
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline:focus,
+.btn-outline.active {
+    background: #4ECCA3;
+    color: #EEEEEE;
+    border-color: #4ECCA3;
+  
+}
+
+.modal-content {
+   background: #393E46;
+}
+
+.modal-content {
+    color: #EEEEEE;
+}
+
+.profile {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin-left: 20px;
+    background-color: #393E46;
+}
+
+.logo {
+    height: 25%;
+    width: 25%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    html {
+        border-right: 5px solid #232931;
+        border-left: 5px solid #232931;
+        min-height: 100%;
+    }
+}
